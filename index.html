@@ -1,81 +1,125 @@
 <!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<!-- Switching to the latest version IE -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en">
 
-		<!-- Adapting the page for mobile devices -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!-- Switching to the latest version IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<!-- Disable phone number recognition -->
-		<meta name="format-detection" content="telephone=no">
-		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+	<!-- Adapting the page for mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<!-- Page title -->
-		<title>Title</title>
+	<!-- Disable phone number recognition -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
 
-		<!-- Keywords for search engines -->
-		<meta name="description" content="">
-		<meta name="keywords" content="">
+	<!-- Page title -->
+	<title>Title</title>
 
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="images/favicon.ico">
+	<!-- Keywords for search engines -->
+	<meta name="description" content="">
+	<meta name="keywords" content="">
 
-		<!-- Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico">
 
-		<!-- Styles -->
-		<link rel="stylesheet" href="css/styles.css">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
-		<link rel="stylesheet" href="css/response_1024.css" media="(max-width: 1024px)">
-		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
-		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
-	</head>
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/styles.css">
 
-	<body>
-		<div class="wrap">
-			<div class="main">
-				<!-- Header -->
-				<header>
-					<div class="cont"></div>
-				</header>
-				<!-- End Header -->
+	<link rel="stylesheet" href="css/response_1024.css" media="(min-width: 1024px)">
+	<link rel="stylesheet" href="css/response_768.css" media="(min-width: 768px)">
+	<link rel="stylesheet" href="css/response_480.css" media="(min-width: 480px)">
+</head>
 
+<body>
+	<div class="wrap">
+		<main>
+			<!-- Header -->
+			<header>
+				<div class="container flex">
+					<div class="logo"><a href="/"><img src="images/logo.svg" alt="Logo"></a></div>
 
-				<!-- Main -->
-				<section class="first_section">
-					<div class="cont">
+					<div class="mobile-menu">
+						<nav class="menu">
+							<div class="menu-item">
+								<a href="/">About</a>
+							</div>
 
+							<div class="menu-item">
+								<a href="/">event</a>
+							</div>
+
+							<div class="menu-item">
+								<a href="/">all events</a>
+							</div>
+
+							<div class="menu-item">
+								<a href="/">footer</a>
+							</div>
+						</nav>
+
+						<div class="lang-btn">
+							<a href="/">
+								<svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12 22.2334C10.6333 22.2334 9.34167 21.9707 8.125 21.4454C6.90833 20.9201 5.846 20.2034 4.938 19.2954C4.03 18.3874 3.31333 17.3251 2.788 16.1084C2.26267 14.8917 2 13.6001 2 12.2334C2 10.8501 2.26267 9.5544 2.788 8.3464C3.31333 7.1384 4.03 6.08007 4.938 5.1714C5.846 4.26273 6.90833 3.54607 8.125 3.0214C9.34167 2.49673 10.6333 2.23407 12 2.2334C13.3833 2.2334 14.6793 2.49607 15.888 3.0214C17.0967 3.54673 18.1547 4.2634 19.062 5.1714C19.9693 6.0794 20.686 7.13773 21.212 8.3464C21.738 9.55507 22.0007 10.8507 22 12.2334C22 13.6001 21.7373 14.8917 21.212 16.1084C20.6867 17.3251 19.97 18.3877 19.062 19.2964C18.154 20.2051 17.0957 20.9217 15.887 21.4464C14.6783 21.9711 13.3827 22.2334 12 22.2334ZM12 20.1834C12.4333 19.5834 12.8083 18.9584 13.125 18.3084C13.4417 17.6584 13.7 16.9667 13.9 16.2334H10.1C10.3 16.9667 10.5583 17.6584 10.875 18.3084C11.1917 18.9584 11.5667 19.5834 12 20.1834ZM9.4 19.7834C9.1 19.2334 8.83767 18.6624 8.613 18.0704C8.38833 17.4784 8.20067 16.8661 8.05 16.2334H5.1C5.58333 17.0667 6.18767 17.7917 6.913 18.4084C7.63833 19.0251 8.46733 19.4834 9.4 19.7834ZM14.6 19.7834C15.5333 19.4834 16.3627 19.0251 17.088 18.4084C17.8133 17.7917 18.4173 17.0667 18.9 16.2334H15.95C15.8 16.8667 15.6127 17.4794 15.388 18.0714C15.1633 18.6634 14.9007 19.2341 14.6 19.7834ZM4.25 14.2334H7.65C7.6 13.9001 7.56267 13.5711 7.538 13.2464C7.51333 12.9217 7.50067 12.5841 7.5 12.2334C7.49933 11.8827 7.512 11.5454 7.538 11.2214C7.564 10.8974 7.60133 10.5681 7.65 10.2334H4.25C4.16667 10.5667 4.10433 10.8961 4.063 11.2214C4.02167 11.5467 4.00067 11.8841 4 12.2334C3.99933 12.5827 4.02033 12.9204 4.063 13.2464C4.10567 13.5724 4.168 13.9014 4.25 14.2334ZM9.65 14.2334H14.35C14.4 13.9001 14.4377 13.5711 14.463 13.2464C14.4883 12.9217 14.5007 12.5841 14.5 12.2334C14.4993 11.8827 14.4867 11.5454 14.462 11.2214C14.4373 10.8974 14.4 10.5681 14.35 10.2334H9.65C9.6 10.5667 9.56267 10.8961 9.538 11.2214C9.51333 11.5467 9.50067 11.8841 9.5 12.2334C9.49933 12.5827 9.512 12.9204 9.538 13.2464C9.564 13.5724 9.60133 13.9014 9.65 14.2334ZM16.35 14.2334H19.75C19.8333 13.9001 19.896 13.5711 19.938 13.2464C19.98 12.9217 20.0007 12.5841 20 12.2334C19.9993 11.8827 19.9787 11.5454 19.938 11.2214C19.8973 10.8974 19.8347 10.5681 19.75 10.2334H16.35C16.4 10.5667 16.4377 10.8961 16.463 11.2214C16.4883 11.5467 16.5007 11.8841 16.5 12.2334C16.4993 12.5827 16.4867 12.9204 16.462 13.2464C16.4373 13.5724 16.4 13.9014 16.35 14.2334ZM15.95 8.2334H18.9C18.4167 7.40006 17.8127 6.67507 17.088 6.0584C16.3633 5.44173 15.534 4.9834 14.6 4.6834C14.9 5.2334 15.1627 5.8044 15.388 6.3964C15.6133 6.9884 15.8007 7.60073 15.95 8.2334ZM10.1 8.2334H13.9C13.7 7.50006 13.4417 6.8084 13.125 6.1584C12.8083 5.5084 12.4333 4.8834 12 4.2834C11.5667 4.8834 11.1917 5.5084 10.875 6.1584C10.5583 6.8084 10.3 7.50006 10.1 8.2334ZM5.1 8.2334H8.05C8.2 7.60007 8.38767 6.9874 8.613 6.3954C8.83833 5.8034 9.10067 5.23273 9.4 4.6834C8.46667 4.9834 7.63733 5.44173 6.912 6.0584C6.18667 6.67507 5.58267 7.40006 5.1 8.2334Z"
+										fill="currentColor" />
+								</svg>
+								EN
+							</a>
+						</div>
 					</div>
-				</section>
-				<!-- End Main -->
-			</div>
+
+					<button type="button" class="mob_menu_link">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</header>
+			<!-- End Header -->
 
 
-			<!-- Footer -->
-			<footer>
-				<div class="cont">
+			<!-- Main -->
+			<section class="first_section">
+				<div class="container">
 
 				</div>
-			</footer>
-			<!-- End Footer -->
-		</div>
-
-		<div class="supports_error">
-			Your browser is outdated, we recommend that you update it to the latest version<br /> or use another more modern one.
-		</div>
-
-		<div class="overlay"></div>
-
-		<div id="svg_icons"></div>
+			</section>
+			<!-- End Main -->
+		</main>
 
 
-		<!-- JavaScript -->
-		<script src="js/lozad.min.js"></script>
+		<!-- Footer -->
+		<footer>
+			<div class="container">
 
-		<script src="js/functions.js"></script>
-		<script src="js/scripts.js"></script>
-	</body>
+			</div>
+		</footer>
+		<!-- End Footer -->
+	</div>
+
+	<div class="supports_error">
+		Your browser is outdated, we recommend that you update it to the latest version<br /> or use another more modern
+		one.
+	</div>
+
+	<div class="overlay"></div>
+
+	<div id="svg_icons"></div>
+
+
+	<!-- JavaScript -->
+	<script src="js/lozad.min.js"></script>
+
+	<script src="js/functions.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+
 </html>

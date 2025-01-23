@@ -1,4 +1,4 @@
-// Проверка браузера
+// Browser checking
 if ( !supportsCssVars() ) {
 	document.getElementsByTagName('body').classList.add("lock");
 	document.getElementsByClassName('supports_error').classList.add("show");
@@ -55,81 +55,21 @@ document.querySelectorAll('[data-anchor]').forEach(link => {
 
 
 // Mobile menu
-document.querySelector('.mob_menu_link').addEventListener("click", function(e){
-    e.preventDefault();
-
-    if ( this.classList.contains('active') ) {
-        this.classList.remove('active');
-
-        document.querySelector('header .menu').classList.remove('visible');
-    } else {
-        this.classList.add('active');
-
-        document.querySelector('header .menu').classList.add('visible');
-    }
-});
-
-
-// Tabs
-document.querySelectorAll(".tabs button").forEach(function(element){
-    element.addEventListener("click", function(e){
+const mobileMenu = (btn, menu) => {
+    document.querySelector(btn).addEventListener("click", function(e){
         e.preventDefault();
 
-        let parent = this.closest(".tabs_container");
-        let activeTab = this.getAttribute("data-content");
-        let level = this.getAttribute("data-level");
+        if ( this.classList.contains('active') ) {
+            this.classList.remove('active');
 
-        if ( !this.classList.contains("active") ) {
-            this.closest('.tabs').querySelector("button.active").classList.remove("active");
+            document.querySelector(menu).classList.remove('visible');
+        } else {
+            this.classList.add('active');
 
-            document.querySelector(activeTab).closest('.tabs_container').querySelectorAll(".tab_content.active." + level).forEach((el) => {
-                el.classList.remove("active");
-            });
-
-            this.classList.add("active");
-
-            document.querySelector(activeTab).classList.add("active");
-
-            // For a few tab_content
-            document.querySelectorAll('[data-id="' + activeTab + '"]').forEach((el) => {
-                el.classList.add("active");
-            });
+            document.querySelector(menu).classList.add('visible');
         }
     });
-});
-
-
-// Quantity changing
-document.querySelectorAll(".amount .minus").forEach((element) => {
-    element.addEventListener("click", function(e){
-        e.preventDefault();
-
-        let parent = this.closest('.amount');
-        let input = parent.querySelector('input');
-        let inputVal = parseFloat( input.value );
-        let minimum = parseFloat( input.getAttribute('data-minimum') );
-        let step = parseFloat( input.getAttribute('data-step') );
-
-        if( inputVal > minimum ){
-            input.value = inputVal-step;
-        }
-    });
-});
-document.querySelectorAll(".amount .plus").forEach((element) => {
-    element.addEventListener("click", function(e){
-        e.preventDefault();
-
-        let parent = this.closest('.amount');
-        let input = parent.querySelector('input');
-        let inputVal = parseFloat( input.value );
-        let maximum = parseFloat( input.getAttribute('data-maximum') );
-        let step = parseFloat( input.getAttribute('data-step') );
-
-        if( inputVal < maximum ){
-            input.value = inputVal+step;
-        }
-    });
-});
+}
 
 
 
@@ -144,21 +84,4 @@ function supportsCssVars() {
     s.parentNode.removeChild(s);
 
     return support;
-}
-
-
-function setHeight(className){
-    let maxheight = 0;
-
-    className.each(function() {
-    	let elHeight = this.offsetHeight;
-
-        if( elHeight > maxheight ) {
-        	maxheight = elHeight;
-        }
-    });
-
-    className.each(function() {
-    	this.style.height = maxheight + 'px';
-    });
 }
