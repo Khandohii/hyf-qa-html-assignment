@@ -184,16 +184,16 @@ main{
 }
 
 
-.text_block{
+.text-block{
     color: var(--text_color2);
 }
 
-.text_block > :last-child{
+.text-block > :last-child{
     margin-bottom: 0 !important;
 }
 
-.text_block h1,
-.text_block > .title{
+.text-block h1,
+.text-block > .title{
     color: var(--color1);
     font-family: var(--font_family2);
     font-size: var(--font_size_title);
@@ -203,30 +203,30 @@ main{
     margin-bottom: 20px;
 }
 
-.text_block p,
-.text_block ul,
-.text_block ol{
-    margin-bottom: 25px;
+.text-block p,
+.text-block ul,
+.text-block ol{
+    margin-bottom: 15px;
 }
 
-.text_block img{
+.text-block img{
     display: block;
 
     max-width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
-.text_block img.left{
+.text-block img.left{
     width: calc(50% - 30px);
     margin-right: 30px;
 }
 
-.text_block img.right{
+.text-block img.right{
     width: calc(50% - 30px);
     margin-left: 30px;
 }
 
-.text_block ul li{
+.text-block ul li{
     position: relative;
 
     display: block;
@@ -236,7 +236,7 @@ main{
     text-indent: 16px;
 }
 
-.text_block ul li:before{
+.text-block ul li:before{
     position: absolute;
     top: 8px;
     left: 0;
@@ -250,11 +250,11 @@ main{
     background: var(--bg2);
 }
 
-.text_block ol{
+.text-block ol{
     counter-reset: li;
 }
 
-.text_block ol li{
+.text-block ol li{
     position: relative;
 
     display: block;
@@ -262,7 +262,7 @@ main{
     list-style-type: none;
 }
 
-.text_block ol li:before{
+.text-block ol li:before{
     color: var(--color3);
     font-weight: 700;
 
@@ -272,11 +272,11 @@ main{
     counter-increment: li;
 }
 
-.text_block ol li + li{
+.text-block ol li + li{
     margin-top: 8px;
 }
 
-.text_block a{
+.text-block a{
     color: var(--color3);
 
     transition: .2s linear;
@@ -285,7 +285,7 @@ main{
     border-bottom: 1px solid;
 }
 
-.text_block a:hover{
+.text-block a:hover{
     color: var(--color1);
 }
 
@@ -321,19 +321,20 @@ main{
 }
 
 
-.main_title{
-    color: var(--color1);
-    font-family: var(--font_family2);
-    font-size: var(--font_size_title);
+.main-title{
+    color: var(--color-primary);
+    font-family: var(--font_family);
+    font-size: 45px;
     font-weight: 700;
-    line-height: var(--line_height_title);
+    line-height: 1.15;
+    margin-bottom: 15px;
 }
 
-.main_title.center{
+.main-title.center{
     text-align: center;
 }
 
-.main_title span{
+.main-title span{
     color: var(--color3);
 }
 
@@ -480,6 +481,30 @@ header .container {
 /*---------------
    Main section
 ---------------*/
+.about-section {
+    margin: 30px 0;
+}
+
+.about-section__box{
+    background: var(--bg-secondary);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.about-section__img{
+    margin-bottom: 15px;
+}
+
+.about-section__img img{
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about-section__data{
+    text-align: justify;
+}
+
 
 
 /*---------------

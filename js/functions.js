@@ -29,7 +29,7 @@ document.querySelectorAll('[data-anchor]').forEach(link => {
 
         const scrollTarget = document.getElementById(href);
 
-        let topOffset = 30; // если не нужен отступ сверху
+        let topOffset = 30;
 
         if (this.getAttribute('data-offset')) {
             topOffset = this.getAttribute('data-offset');
