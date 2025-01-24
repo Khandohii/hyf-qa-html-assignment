@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded', () => {
-    mobileMenu('.mob_menu_link', 'header .menu');
+    mobileMenu('.mob_menu_btn', 'header .mobile-menu');
 });
