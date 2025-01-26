@@ -2,17 +2,75 @@
     /*---------------
         Main styles
     ---------------*/
+    .main-title{
+        margin-bottom: 30px;
+    }
 
     /*---------------
         Header
     ---------------*/
+    .mobile-menu{
+        visibility: visible;
+        opacity: 1;
+        position: relative;
+        height: auto;
+        display: flex;
+        background: transparent;
+        padding: 0;
+        align-items: center;
+        align-content: center;
+    }
+
+    .menu{
+        flex-direction: row;
+        gap: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu-item + .menu-item {
+        margin-left: 30px;
+    }
+
+    .lang-btn{
+        margin-top: 0;
+        margin-left: 25px;
+    }
+
+    .mob_menu_btn{
+        display: none;
+    }
 
     /*---------------
         Main section
     ---------------*/
+    .events__grid > *{
+        width: calc(50% - 15px);
+    }
+
+
+    .info-sect__box{
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .info-sect__img{
+        height: auto;
+        width: 50%;
+        flex-shrink: 0;
+    }
 
     /*---------------
         Footer
     ---------------*/
+    .footer__copy {
+        text-align: center;
+    }
+
+    .footer__col{
+        width: calc(100% / 4 - 23px);
+    }
 
 }

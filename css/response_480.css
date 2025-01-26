@@ -14,5 +14,14 @@
     /*---------------
         Footer
     ---------------*/
+    .footer__top{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer__col{
+        width: calc(50% - 30px);
+        flex-grow: 1;
+    }
 
 }
