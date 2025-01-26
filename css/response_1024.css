@@ -6,6 +6,15 @@
         font-size: 45px;
     }
 
+
+    * + .btn{
+        margin-top: 30px;
+    }
+
+    .btn > *{
+        display: inline-flex;
+    }
+
     /*---------------
         Header
     ---------------*/
@@ -63,9 +72,21 @@
         width: calc(100% / 3 - 20px);
     }
 
+    .event-item__title{
+        font-size: 32px;
+    }
+
+    .event-item__desc{
+        font-size: 16px;
+    }
+
     /*---------------
         Footer
     ---------------*/
+    .footer{
+        padding: 50px 0;
+    }
+
     .footer__col{
         width: calc(100% / 5 - 24px);
     }

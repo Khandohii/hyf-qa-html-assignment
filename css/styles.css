@@ -631,6 +631,7 @@ header .container {
     font-size: 14px;
     line-height: 1.4;
     margin-bottom: 15px;
+    text-align: justify;
 }
 
 .event-item__label-box {

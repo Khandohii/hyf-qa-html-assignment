@@ -1,0 +1,62 @@
+@media (min-width: 1280px){
+    /*---------------
+        Main styles
+    ---------------*/
+    .label-box{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .btn > *{
+        height: 60px;
+        border-radius: 20px;
+        font-size: 24px;
+    }
+
+    .text-block h3{
+        font-size: 32px;
+        margin: 30px 0;
+    }
+
+    /*---------------
+        Header
+    ---------------*/
+    header{
+        height: 80px;
+        padding: 15px 0;
+    }
+
+    /*---------------
+        Main section
+    ---------------*/
+    .about-section__img{
+        height: auto;
+        width: 45%;
+        max-width: 600px;
+        margin-top: 0;
+    }
+
+
+    .about-section{
+        margin: 80px 0;
+    }
+
+
+    .info-sect{
+        padding: 80px 0;
+    }
+
+    .info-sect .btn{
+        margin-top: 50px;
+    }
+
+
+    .events{
+        margin: 80px 0;
+    }
+
+    /*---------------
+        Footer
+    ---------------*/
+
+}
