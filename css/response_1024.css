@@ -15,6 +15,35 @@
         display: inline-flex;
     }
 
+    .btn > *:hover{
+        background: #b3261e;
+    }
+
+
+    /*---------------
+        Header
+    ---------------*/
+    .menu-item a{
+        position: relative;
+        padding: 2px 0;
+    }
+
+    .menu-item a:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background: currentColor;
+        transition: .2s linear;
+    }
+
+    .menu-item a:hover:before {
+        width: 100%;
+    }
+
     /*---------------
         Main section
     ---------------*/
@@ -81,6 +110,26 @@
     ---------------*/
     .footer{
         padding: 50px 0;
+    }
+
+    .footer a{
+        position: relative;
+    }
+
+    .footer a:before{
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background: currentColor;
+        transition: .2s linear;
+    }
+
+    .footer a:hover:before{
+        width: 100%;
     }
 
     .footer__col{

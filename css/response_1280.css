@@ -41,9 +41,21 @@
         margin: 80px 0;
     }
 
+    .about-section__box{
+        border-radius: 20px;
+    }
+
+    .about-section__img img{
+        border-radius: 20px;
+    }
+
 
     .info-sect{
         padding: 80px 0;
+    }
+
+    .info-sect__box{
+        border-radius: 20px;
     }
 
     .info-sect .btn{
@@ -53,6 +65,18 @@
 
     .events{
         margin: 80px 0;
+    }
+
+    .event-item{
+        border-radius: 20px;
+    }
+
+    .event-item__img img{
+        border-radius: 20px 20px 0 0;
+    }
+
+    .event-item__data{
+        padding: 30px;
     }
 
 }
